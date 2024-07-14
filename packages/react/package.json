@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "license": "MIT",
   "type": "module",
+  "description": "使 Arco Design 的图标，作为纯 svg react 组件 独立使用",
   "author": {
     "name": "whitekite",
     "email": "1075790909@qq.com"
