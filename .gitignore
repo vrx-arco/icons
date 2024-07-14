@@ -6,7 +6,7 @@ dist
 .turbo
 .pnpm-debug.log
 .svg
-packages/iconify
+packages/iconify/*
 !packages/iconify/package.json
 packages/*/src
 packages/*/web-types.json
