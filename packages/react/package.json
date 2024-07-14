@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/icons-react",
-  "version": "0.2.1",
+  "version": "0.0.1",
   "license": "MIT",
   "type": "module",
   "description": "使 Arco Design 的图标，作为纯 svg react 组件 独立使用",

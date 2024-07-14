@@ -1,6 +1,6 @@
 {
   "name": "@vrx-arco/icons-monorepo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@9.5.0",
@@ -20,7 +20,8 @@
     "update:deps": "taze major -w -i -a -r -f",
     "clean:deps": "vfdel node_modules packages/*/node_modules playground/*/node_modules docs/node_modules",
     "force:clean:deps": "vfdel pnpm-lock.yaml && pnpm clean:deps",
-    "force:install": "pnpm force:clean:deps && pnpm install"
+    "force:install": "pnpm force:clean:deps && pnpm install",
+    "docs:build": "pnpm --filter ./docs/ docs:build"
   },
   "devDependencies": {
     "@iconify/tools": "^4.0.4",
