@@ -8,4 +8,5 @@ dist
 .svg
 packages/iconify
 packages/*/src
+packages/*/web-types.json
 cache
