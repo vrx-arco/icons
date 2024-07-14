@@ -1,0 +1,7 @@
+{
+  "extends": "@vill-v/tsconfig/base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}

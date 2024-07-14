@@ -1,0 +1,20 @@
+import { forwardRef, RefAttributes, ForwardRefExoticComponent } from 'react';
+
+function %name%Component (iconProps, ref) {
+  const { className } = iconProps;
+  const props = {
+    "aria-hidden": true,
+    focusable: false,
+    ref,
+    ...iconProps,
+    className,
+  };
+  
+  return %svg%;
+}
+
+const %name%:ForwardRefExoticComponent<RefAttributes<unknown>> = forwardRef(%name%Component);
+
+%name%.displayName = '%name%';
+
+export default %name%;
