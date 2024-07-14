@@ -15,6 +15,10 @@ export async function genIconifyJsonPackage(iconSet: IconSet) {
       publishConfig: {
         access: 'public',
       },
+      repository: {
+        type: 'git',
+        url: 'git+https://github.com/vrx-arco/icons.git',
+      },
     },
     cleanup: true,
     customFiles: {
