@@ -39,10 +39,10 @@
   <ClientOnly>
     <Teleport v-if="show" to="body">
       <div
-        class="fixed top-0 left-0 z-1000 bg-gray-100/70 w-full h-full flex justify-center items-start pt-15vh backdrop-blur-sm"
+        class="fixed top-0 left-0 z-1000 bg-gray-100/70 w-full h-full flex justify-center items-start pt-15vh backdrop-blur-sm overflow-auto"
         @click="handleClose"
       >
-        <div class="p-10px rounded bg-$vp-c-bg w-9/10 max-w-750px" @click.stop>
+        <div class="p-10px rounded bg-$vp-c-bg w-9/10 max-w-750px m-10px" @click.stop>
           <div class="flex">
             <div class="flex-1 min-w-0">
               <span class="text-$vp-c-text-3">Icon: </span>
