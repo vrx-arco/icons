@@ -51,14 +51,14 @@
             <div
               class="rounded p-5px bg-$vp-c-default-3 cursor-pointer transition duration-200 ease-in-out hover:scale-120"
             >
-              <Icon icon="arco-design:close" />
+              <Icon icon="arco-design:close" @click="handleClose" />
             </div>
           </div>
-          <div class="flex mt-10px items-start">
+          <div class="flex mt-10px items-start max-sm:flex-col">
             <div class="rounded bg-$vp-c-default-3 p-10px text-20">
               <Icon v-if="data.iconify" :icon="data.iconify" />
             </div>
-            <div class="ml-10px flex-1 min-w-0">
+            <div class="max-sm:mt-10px flex-1 min-w-0 sm:ml-10px max-sm:w-full">
               <IconPanelTabs v-model="activeType" />
               <SvgString v-if="activeType === IconItemType.SVG" :icon="data.iconify" />
               <VueString v-if="activeType === IconItemType.VUE" :icon="data.component" />
