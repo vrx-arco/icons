@@ -21,6 +21,7 @@
     "@vrx-arco/iconify-json": "workspace:*",
     "@vrx-arco/icons-vue": "workspace:*",
     "@vueuse/core": "^10.11.0",
+    "floating-vue": "^5.2.2",
     "scule": "^1.3.0",
     "vue": "^3.4.31",
     "vue-sonner": "^1.1.3",

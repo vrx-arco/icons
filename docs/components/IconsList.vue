@@ -2,8 +2,10 @@
   import { computed, markRaw, ref } from 'vue'
   import { Icon, addCollection, listIcons } from '@iconify/vue'
   import { pascalCase } from 'scule'
+  import { vTooltip } from 'floating-vue'
   import type { IconItem } from './types'
   import IconPanel from './IconPanel.vue'
+  import 'floating-vue/dist/style.css'
 
   const { icons } = await import('@vrx-arco/iconify-json')
 
@@ -53,6 +55,13 @@
     <div
       v-for="icon in list"
       :key="icon.name"
+      v-tooltip="{
+        content: `
+        <p><span class='text-$vp-c-default-1'>Icon name: </span>${icon.name}</p>
+        <p><span class='text-$vp-c-default-1'>IconifyIcon: </span>${icon.iconify}</p>
+        <p><span class='text-$vp-c-default-1'>Vue/React: </span>Icon${icon.component}</p>`,
+        html: true,
+      }"
       class="p-10px rounded hover:bg-$vp-c-default-3 flex flex-col items-center justify-center hover:scale-120 transition duration-200 ease-in-out cursor-pointer"
       @click="openPanel(icon)"
     >
