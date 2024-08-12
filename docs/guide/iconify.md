@@ -151,19 +151,19 @@ export default defineConfig({
 :::code-group
 
 ```bash [npm]
-$ npm i @vrx-arco/icons-vue
+$ npm i @vrx-arco/iconify-json
 ```
 
 ```bash [yarn]
-$ yarn add @vrx-arco/icons-vue
+$ yarn add @vrx-arco/iconify-json
 ```
 
 ```bash [pnpm]
-$ pnpm add @vrx-arco/icons-vue
+$ pnpm add @vrx-arco/iconify-json
 ```
 
 ```bash [bun]
-$ bun add @vrx-arco/icons-vue
+$ bun add @vrx-arco/iconify-json
 ```
 
 :::
