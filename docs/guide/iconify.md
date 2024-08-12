@@ -65,7 +65,7 @@ export default defineConfig({
   plugins:[
       Icons({
         customCollections: {
-          ...ExternalPackageIconLoader('@vrx-arco/iconify-json')
+          'arco-design': ExternalPackageIconLoader('@vrx-arco/iconify-json')['iconify-json']
         }
       })
     ]
@@ -110,7 +110,7 @@ export default defineConfig({
   presets: [
     presetIcons({ 
       collections: {
-        ...createExternalPackageIconLoader('@vrx-arco/iconify-json')
+        'arco-design': createExternalPackageIconLoader('@vrx-arco/iconify-json')['iconify-json']
       }
      }),
     // ...other presets
