@@ -53,7 +53,7 @@ const genReactIcon = async (name: string, svg: string) => {
 }
 
 export const genReactIcons = async (iconSet: IconSet) => {
-  await del(['packages/react/src/*'])
+  await del(['packages/react/src'])
   const list = new Map<string, () => Promise<void>>()
   iconSet.forEach((name, type) => {
     if (type !== 'icon') {
