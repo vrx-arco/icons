@@ -28,7 +28,7 @@ layout: 'page'
   
 
 <Suspense>
-<IconsList/>
+  <IconsList/>
 </Suspense>
 
 

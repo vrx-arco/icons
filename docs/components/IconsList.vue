@@ -68,5 +68,7 @@
       <Icon :icon="icon.iconify" class="text-8" />
     </div>
   </div>
-  <IconPanel ref="panelRef" />
+  <ClientOnly>
+    <IconPanel ref="panelRef" />
+  </ClientOnly>
 </template>
