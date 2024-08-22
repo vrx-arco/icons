@@ -24,6 +24,15 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
+    },
+    "./*.js": {
+      "default": "./dist/*.vue.js",
+      "types": "./dist/*.vue.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.vue.js",
+      "require": "./dist/*.vue.cjs",
+      "types": "./dist/*.vue.d.ts"
     }
   },
   "files": [

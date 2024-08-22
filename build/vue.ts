@@ -41,11 +41,13 @@ const genVueIcon = async (name: string, svg: string) => {
     template.replace('%svg%', str).replace('%name%', name)
   )
 
+  await writeFile(`packages/vue/src/${name}.ts`, `export { default } from './${name}.vue'`)
+
   consola.success('generate vue component:', name)
 }
 
 export const genVueIcons = async (iconSet: IconSet) => {
-  await del(['packages/vue/src/*.vue', 'packages/vue/*.{js,cjs}', 'packages/vue/src/*.d.{ts,cts}'])
+  await del(['packages/vue/src'])
   const list = new Map<string, () => Promise<void>>()
   iconSet.forEach((name, type) => {
     if (type !== 'icon') {
@@ -61,7 +63,7 @@ export const genVueIcons = async (iconSet: IconSet) => {
 
   let entryFile = ''
   ;[...list.keys()].forEach((key) => {
-    entryFile += `export { default as ${key} } from './${key}.vue'
+    entryFile += `export { default as ${key} } from './${key}.js'
 `
   })
 
