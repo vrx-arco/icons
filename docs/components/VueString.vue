@@ -4,6 +4,9 @@
 
   const props = defineProps<{ icon?: string }>()
   const importUrl = computed(() => `import { Icon${props.icon} } from '@vrx-arco/icons-vue'`)
+  const subImportUrl = computed(
+    () => `import { Icon${props.icon} } from '@vrx-arco/icons-vue/Icon${props.icon}'`
+  )
   const template$1 = () => {
     return [
       '<script setup lang="ts">',
@@ -26,6 +29,7 @@
 
 <template>
   <CodeString :text="importUrl" />
+  <CodeString :text="subImportUrl" class="my-10px" />
   <p class="my-10px">简单示例</p>
   <CodeString :text="str" />
 </template>

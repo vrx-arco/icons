@@ -5,6 +5,9 @@
   const props = defineProps<{ icon?: string }>()
 
   const importUrl = computed(() => `import { Icon${props.icon} } from '@vrx-arco/icons-react'`)
+  const subImportUrl = computed(
+    () => `import { Icon${props.icon} } from '@vrx-arco/icons-react/Icon${props.icon}'`
+  )
   const template$1 = () => {
     return `${importUrl.value}
 
@@ -23,6 +26,7 @@ export const App = () => {
 
 <template>
   <CodeString :text="importUrl" />
+  <CodeString :text="subImportUrl" class="my-10px" />
   <p class="my-10px">简单示例</p>
   <CodeString :text="str" />
 </template>
