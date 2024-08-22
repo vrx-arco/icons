@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.3.0
+
+[compare changes](https://github.com/vrx-arco/icons/compare/v0.2.0...v0.3.0)
+
+### 🚀 特性
+
+- **vue:** ⚠️  为防止与 `@arco-design/web-vue` 的  ide/volar 图标类型声明冲突，不再生成 ide/volar 帮助文件 ([9eb2883](https://github.com/vrx-arco/icons/commit/9eb2883))
+
+#### 🚨 破坏性改动
+
+- **vue:** ⚠️  为防止与 `@arco-design/web-vue` 的  ide/volar 图标类型声明冲突，不再生成 ide/volar 帮助文件 ([9eb2883](https://github.com/vrx-arco/icons/commit/9eb2883))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v0.2.0
 
 [compare changes](https://github.com/vrx-arco/icons/compare/v0.1.0...v0.2.0)
