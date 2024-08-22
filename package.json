@@ -26,7 +26,7 @@
   "devDependencies": {
     "@iconify/tools": "^4.0.5",
     "@types/node": "^22.5.0",
-    "@vill-v/bumpp": "^2.1.2",
+    "@vill-v/bumpp-github": "^2.1.2",
     "@vill-v/eslint-config": "^1.4.0",
     "@vill-v/prettier-config": "^1.0.0",
     "@vill-v/tsconfig": "^1.0.1",
