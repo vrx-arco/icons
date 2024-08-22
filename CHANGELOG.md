@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.3.1
+
+[compare changes](https://github.com/vrx-arco/icons/compare/v0.3.0...v0.3.1)
+
+### 🩹 修复
+
+- **vue:** 修复 `package.json` 错误 ([55e5e7c](https://github.com/vrx-arco/icons/commit/55e5e7c))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v0.3.0
 
 [compare changes](https://github.com/vrx-arco/icons/compare/v0.2.0...v0.3.0)
