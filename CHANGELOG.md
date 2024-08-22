@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/vrx-arco/icons/compare/v0.1.0...v0.2.0)
+
+### 🚀 特性
+
+- **vue:** 支持子路径 `@vrx-arco/icons-vue/Icon*` 导入图标 ([19f0cef](https://github.com/vrx-arco/icons/commit/19f0cef))
+- **react:** 支持子路径 `@vrx-arco/icons-react/Icon*` 导入图标 ([14293e8](https://github.com/vrx-arco/icons/commit/14293e8))
+
+### 📖 文档
+
+- 修复 `iconify` 安装说明中的错误 ([0644bab](https://github.com/vrx-arco/icons/commit/0644bab))
+- Fix docs ssr build error ([c2c8f74](https://github.com/vrx-arco/icons/commit/c2c8f74))
+- `vue,react` 增加子路径导入说明 ([90e8ecd](https://github.com/vrx-arco/icons/commit/90e8ecd))
+- `vue,react` 图标 增加子路径导入快捷复制 ([5b282dc](https://github.com/vrx-arco/icons/commit/5b282dc))
+
+### ❤️ 贡献者
+
+- Whitekite ([@Colourlessglow](http://github.com/Colourlessglow))
+
 ## v0.1.0
 
 [compare changes](https://github.com/vrx-arco/icons/compare/v0.0.1...v0.1.0)
