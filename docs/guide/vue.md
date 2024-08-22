@@ -3,7 +3,8 @@
  在 vue3 中使用图标
 
 <script setup lang="ts">
-  import { IconAlignCenter,IconAlignRight } from '@vrx-arco/icons-vue'
+  import { IconAlignCenter } from '@vrx-arco/icons-vue'
+  import IconAlignRight from '@vrx-arco/icons-vue/IconAlignRight'
 </script>
 
 [![npm version](https://img.shields.io/npm/v/@vrx-arco/icons-vue?color=orange)](https://npmjs.com/package/@vrx-arco/icons-vue)
@@ -21,13 +22,19 @@
 
 ```vue
 <script setup lang="ts">
-  import { IconAlignCenter,IconAlignRight } from '@vrx-arco/icons-vue'
+  // 入口点导入
+  import { IconAlignCenter } from '@vrx-arco/icons-vue'
+
+  // 子路径导入
+  import IconAlignRight from '@vrx-arco/icons-vue/IconAlignRight'
 </script>
 <template>
   <IconAlignCenter style="font-size:30px;color:#ff6736;" />
   <IconAlignRight style="font-size:30px;color:#ff6736;" />
 </template>
 ```
+
+## 子路径导入
 
 ## 安装
 
