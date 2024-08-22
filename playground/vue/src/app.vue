@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import * as Icons from '@vrx-arco/icons-vue'
-  import { ref } from 'vue'
+  import { markRaw } from 'vue'
 
-  const list = ref(Object.values(Icons))
+  const list = markRaw(Object.values(Icons))
 </script>
 <template>
   <div class="grid grid-cols-24">
