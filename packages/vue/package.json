@@ -21,18 +21,18 @@
   "module": "./dist/index.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./*.js": {
-      "default": "./dist/*.vue.js",
-      "types": "./dist/*.vue.d.ts"
+      "types": "./dist/*.vue.d.ts",
+      "default": "./dist/*.vue.js"
     },
     "./*": {
+      "types": "./dist/*.vue.d.ts",
       "import": "./dist/*.vue.js",
-      "require": "./dist/*.vue.cjs",
-      "types": "./dist/*.vue.d.ts"
+      "require": "./dist/*.vue.cjs"
     }
   },
   "files": [
