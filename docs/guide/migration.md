@@ -50,3 +50,30 @@ export const App = () =>{
   )
 }
 ```
+
+## 图标配置
+
+> [!TIP] 提示
+> 由于 iconify 限制，生成的 svg 与 `@arco-design/web-{vue,react}` 存在不同
+>
+> 如需定制`线宽，拐角，端点`
+>
+> 请参考以下配置
+
+```
+// or svg
+.arco-icon { 
+  font-size: 32px;
+  stroke-linecap: round; // [!code --]
+  stroke-linejoin: bevel; 
+  stroke-width: 1; // [!code --]
+}
+// or svg [stroke-width='4'] // [!code ++]
+.arco-icon [stroke-width='4'] { // [!code ++]
+    stroke-width: 1; // [!code ++]
+} // [!code ++]
+// or svg [stroke-linecap='butt'] // [!code ++]
+.arco-icon [stroke-linecap='butt'] { // [!code ++]
+    stroke-linecap: round; // [!code ++]
+} // [!code ++]
+```
