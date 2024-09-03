@@ -14,7 +14,15 @@
       :key="icon"
       class="p-10px hover:bg-gray-100 flex items-center justify-center"
     >
-      <Icon :icon color="#ff6736" class="text-30px" />
+      <Icon :icon color="#ff6736" class="text-30px arco-icon" />
     </div>
   </div>
 </template>
+<style>
+  .arco-icon [stroke-width='4'] {
+    stroke-width: 1;
+  }
+  .arco-icon [stroke-linecap='butt'] {
+    stroke-linecap: round;
+  }
+</style>
