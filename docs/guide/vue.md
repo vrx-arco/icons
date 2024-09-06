@@ -34,8 +34,6 @@
 </template>
 ```
 
-## 子路径导入
-
 ## 安装
 
 :::code-group
